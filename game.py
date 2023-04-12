@@ -86,7 +86,7 @@ def play(game, x_player, o_player, print_game=True):
         print("It\'s a Tie! ")
 
 if __name__ == '__main__':
-    opponent = input('___Opponent___\n\t1. RandomComputer\n\t2. Unbeatable AI\nEnter Opponent no. : ')
+    opponent = int(input('___Opponent___\n\t1. RandomComputer\n\t2. Unbeatable AI\nEnter Opponent no. : '))
     x_player = HumanPlayer('X')
     if opponent == 2:
         o_player = SmartComputerPlayer('O') 
