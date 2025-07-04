@@ -1,0 +1,87 @@
+/* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    position: relative;
+    background-color: #333;
+    border: 2px solid #444;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.cell form {
+    width: 100%;
+    height: 100%;
+}
+
+.cell-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-btn:hover {
+    background-color: #555;   }
+
+.start-btn,
+.restart-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #03a9f4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.start-btn:hover,
+.restart-btn:hover {
+    background-color: #0288d1;
+}
+
+.turn-indicator {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

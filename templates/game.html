@@ -1,0 +1,52 @@
+<!-- templates/game.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game Board</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tic Tac Toe</h2>
+        <p class="turn-indicator">
+            {% if winner %}
+            {% if winner == 'X' %}
+            🎉 You Win!
+            {% elif winner == 'O' %}
+            🤖 AI Wins!
+            {% else %}
+            🤝 It's a Tie!
+            {% endif %}
+            {% else %}
+            {% if turn == 'X' %}
+            Your Turn: X
+            {% else %}
+            AI: O
+            {% endif %}
+            {% endif %}
+        </p>
+
+        <div class="board">
+            {% for i in range(9) %}
+            <div class="cell">
+                {% if board[i] == ' ' and winner == None and turn == 'X' %}
+                <form method="post" action="{{ url_for('move', square=i) }}">
+                    <button class="cell-btn" type="submit">{{ board[i] }}</button>
+                </form>
+                {% else %}
+                {{ board[i] }}
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <form action="/" method="get">
+            <button class="restart-btn" type="submit">Restart Game</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe with AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe vs Unbeatable AI</h1>
+        <form action="/start" method="post">
+            <button type="submit" class="start-btn">Start Game</button>
+        </form>
+    </div>
+</body>
+
+</html>

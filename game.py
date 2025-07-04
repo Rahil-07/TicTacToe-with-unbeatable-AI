@@ -71,7 +71,7 @@ def play(game, x_player, o_player, print_game=True):
         if game.make_move(square,letter):
 
             if print_game:
-                print(letter + ' makes a move to sqares {}'.format(square))
+                print(letter + ' makes a move to squares {}'.format(square))
                 game.print_board()
                 print('')
             
