@@ -26,8 +26,8 @@ An unbeatable AI-based Tic-Tac-Toe game built using Python and Flask. This proje
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Rahil-07/TicTacToe-with-unbeatable-AI.git
-cd TicTacToe-with-unbeatable-AI
+git clone https://github.com/Rahil-07/Minimax-Powered-Tic-Tac-Toe-Game.git
+cd Minimax-Powered-Tic-Tac-Toe-Game
 ```
 
 ### 2. Install Requirements
