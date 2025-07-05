@@ -16,7 +16,7 @@ An unbeatable AI-based Tic-Tac-Toe game built using Python and Flask. This proje
 
 - **Python** – Game logic and AI
 - **Flask** – Web server and routing
-- **HTML + CSS (Jinja2 templates)** – Frontend rendering
+- **HTML + CSS ** – Frontend rendering
 - **Minimax Algorithm** – For perfect AI decision-making
 
 ---
@@ -26,8 +26,8 @@ An unbeatable AI-based Tic-Tac-Toe game built using Python and Flask. This proje
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/tictactoe-ai-flask.git
-cd tictactoe-ai-flask
+git clone https://github.com/Rahil-07/TicTacToe-with-unbeatable-AI.git
+cd TicTacToe-with-unbeatable-AI
 ```
 
 ### 2. Install Requirements
