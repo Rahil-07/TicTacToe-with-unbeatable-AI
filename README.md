@@ -16,7 +16,7 @@ An unbeatable AI-based Tic-Tac-Toe game built using Python and Flask. This proje
 
 - **Python** – Game logic and AI
 - **Flask** – Web server and routing
-- **HTML + CSS ** – Frontend rendering
+- **HTML + CSS** – Frontend rendering
 - **Minimax Algorithm** – For perfect AI decision-making
 
 ---
